@@ -5,7 +5,6 @@ export const COLORS = ["red", "blue", "green"];
 const DEFAULT_COLOR_INDEX = 0;
 
 export function ColoredBox(): React.JSX.Element {
-    //WORKING
     const [colorIndex, setColorIndex] = useState<number>(DEFAULT_COLOR_INDEX);
     function ChangeColor(): React.JSX.Element {
         return (
