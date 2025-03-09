@@ -10,8 +10,8 @@ const PEOPLE = [
     "Margaret Hamilton",
 ];
 
+//WORKING
 export function ChooseTeam(): React.JSX.Element {
-    //WORKING
     const [allOptions, setAllOptions] = useState<string[]>(PEOPLE);
     const [team, setTeam] = useState<string[]>([]);
 
@@ -23,6 +23,7 @@ export function ChooseTeam(): React.JSX.Element {
 
     function clearTeam() {
         setTeam([]);
+        setAllOptions(PEOPLE);
     }
 
     return (
